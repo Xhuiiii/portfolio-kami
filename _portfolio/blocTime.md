@@ -40,10 +40,12 @@ Three constants:
 (They're pretty self explanatory)
 
 Two private variables:
+
 * timer
 * completedSessions (initialized to = 0)
 
 Three public variables:
+
 * this.onBreak (initialized as false)
 * this.time (initialized as WORK_TIME)
 * this.buttonName (initialized as "start")
