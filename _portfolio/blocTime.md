@@ -16,25 +16,25 @@ BlocTime. One of the projects I worked on during my Bloc frontend web developer 
 ## Problem
 
 The following are the user stories I was given:
-1. Start and reset a 25 minute work session.
-2. Start and reset a 5 minute break after each completed work session.
-3. Start and reset a longer, 30 minute break after every 4 completed work sessions.
-4. Displaying the live timer during sessions.
-5. Creating "beep" sound after every completed session.
-6. The ability to record completed tasks, and link the to a firebase database.
-7. Displaying the tasks in reverse chronological order. 
+- Start and reset a 25 minute work session.
+- Start and reset a 5 minute break after each completed work session.
+- Start and reset a longer, 30 minute break after every 4 completed work sessions.
+- Displaying the live timer during sessions.
+- Creating "beep" sound after every completed session.
+- The ability to record completed tasks, and link the to a firebase database.
+- Displaying the tasks in reverse chronological order. 
 
 ## Solution
 
-Following the given wireframes, I first created a button and displayed a time using `{{ }}` markup, linking it to the time variable in my home controller. I put most of the logic for this project inside the home controller.
+Following the given wireframes, I first created a button and displayed a time using {{ }} markup, linking it to the time variable in my home controller. I put most of the logic for this project inside the home controller.
 
 ### Track time 
 
 In the home controller, I first created: 
 Three constants:
-* WORK_TIME
-* BREAK_TIME
-* LONG_BREAK_TIME
+- WORK_TIME
+- BREAK_TIME
+- LONG_BREAK_TIME
 (They're pretty self explanatory)
 
 Two private variables:
