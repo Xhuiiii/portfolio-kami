@@ -1,7 +1,7 @@
-
+---
 layout: post
 title: BlocTime - Track time
-
+---
 
 In the home controller, I first created: hi
 Three constants:
