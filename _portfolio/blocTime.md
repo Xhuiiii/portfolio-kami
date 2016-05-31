@@ -16,9 +16,9 @@ BlocTime. One of the projects I worked on during my Bloc frontend web developer 
 ## Problem
 
 The following are the user stories I was given:
-- Start and reset a 25 minute work session.
-- Start and reset a 5 minute break after each completed work session.
-- Start and reset a longer, 30 minute break after every 4 completed work sessions.
+1. Start and reset a 25 minute work session.
+1. Start and reset a 5 minute break after each completed work session.
+1. Start and reset a longer, 30 minute break after every 4 completed work sessions.
 - Displaying the live timer during sessions.
 - Creating "beep" sound after every completed session.
 - The ability to record completed tasks, and link the to a firebase database.
@@ -32,19 +32,19 @@ Following the given wireframes, I first created a button and displayed a time us
 
 In the home controller, I first created: 
 Three constants:
-- WORK_TIME
-- BREAK_TIME
-- LONG_BREAK_TIME
+  * WORK_TIME
+  * BREAK_TIME
+  * LONG_BREAK_TIME
 (They're pretty self explanatory)
 
 Two private variables:
-* timer
-* completedSessions (initialized to = 0)
+  * timer
+  * completedSessions (initialized to = 0)
 
 Three public variables:
-* this.onBreak (initialized as false)
-* this.time (initialized as WORK_TIME)
-* this.buttonName (initialized as "start")
+  * this.onBreak (initialized as false)
+  * this.time (initialized as WORK_TIME)
+  * this.buttonName (initialized as "start")
 
 These variables gave my timer its frame. Now, time for some logic...
 
