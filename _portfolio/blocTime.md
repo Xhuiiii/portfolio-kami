@@ -16,6 +16,8 @@ BlocTime. One of the projects I worked on during my Bloc frontend web developer 
 ## Problem
 
 The following are the user stories I was given:
+1. First ordered list item
+2. Another item
 Start and reset a 25 minute work session.
 Start and reset a 5 minute break after each completed work session.
 Start and reset a longer, 30 minute break after every 4 completed work sessions.
