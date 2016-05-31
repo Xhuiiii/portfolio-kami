@@ -37,6 +37,7 @@ Three constants:
 * WORK_TIME
 * BREAK_TIME
 * LONG_BREAK_TIME
+
 (They're pretty self explanatory)
 
 Two private variables:
