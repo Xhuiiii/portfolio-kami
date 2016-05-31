@@ -32,19 +32,19 @@ Following the given wireframes, I first created a button and displayed a time us
 
 In the home controller, I first created: 
 Three constants:
-..* WORK_TIME
-..* BREAK_TIME
-..* LONG_BREAK_TIME
+* WORK_TIME
+* BREAK_TIME
+* LONG_BREAK_TIME
 (They're pretty self explanatory)
 
 Two private variables:
-..* timer
-..* completedSessions (initialized to = 0)
+* timer
+* completedSessions (initialized to = 0)
 
 Three public variables:
-..* this.onBreak (initialized as false)
-..* this.time (initialized as WORK_TIME)
-..* this.buttonName (initialized as "start")
+* this.onBreak (initialized as false)
+* this.time (initialized as WORK_TIME)
+* this.buttonName (initialized as "start")
 
 These variables gave my timer its frame. Now, time for some logic...
 
@@ -90,7 +90,7 @@ In the home controller, I created a public addTask function which took the input
 
 ### Present tasks in reverse chronological order
 
-Now, this part took a bit of researching. When creating the add function in the tasks service, I created a date along with the task, setting it to `Firebase.ServerValue.TIMESTAMP`. Then, when calling ng-repeat on the home controller's taskList in the view, I filtered it using ` | orderBy: '-date'`. The "-" before date gave it the "reverse" it needed. 
+Now, this part took a bit of researching. When creating the add function in the tasks service, I created a date along with the task, setting it to `Firebase.ServerValue.TIMESTAMP`. Then, when calling ng-repeat on the home controller's taskList in the view, I filtered it using `home.taskList | orderBy: '-date'`. The "-" before date gave it the "reverse" it needed. 
 
 ## Results
 
