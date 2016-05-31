@@ -59,7 +59,7 @@ A `countdown()` function was then created to...well..countdown the timer! I had 
 
 I "injected" Angular's `$interval` service into my home controller and created the public function `startResetTimer()`. The function starts the countdown timer and handles resetting the timer if needed.
 
-```javascript
+{% highlight javascript %}
 this.startResetTimer = function(){
     if(self.buttonName === "Start"){
         $interval.cancel(timer);
@@ -68,7 +68,7 @@ this.startResetTimer = function(){
         setTimer();
     }
 };
-```
+{% endhighlight %}
 
 The function first checks that the timer hasn't started via the buttonName (this will be set to "reset" if started), and if it's true, it will stop the current timer, and set the timer to call the countdown function every second (or 1000 milliseconds). If the timer has already begun, and this function is called, the function should set the timer via `setTimer()`.
 
